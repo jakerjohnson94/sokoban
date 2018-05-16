@@ -1,0 +1,67 @@
+:root {
+  --cellHeight: 50px;
+}
+.W{
+  background-image: url(pics/wallTile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.F{
+  background-image: url(http://pixelartmaker.com/art/c0e1e34c1b64249.png);
+  background-size: cover;
+  
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url(pics/floorTile.png);
+  
+   
+}
+.B{
+  background-image: url(pics/boulder.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.O{
+  background-image: url(pics/targetTile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#player {
+  height: 100px;
+  background-image: url(pics/pokeJakeFront1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+}
+
+
+.row {
+  display: flex;
+}
+
+@keyframes slideRight {
+  from {margin-left: -40px;}
+  to {margin-left: 0;}
+}
+.slideRight {animation: slideRight .5s ease-out;}
+
+@keyframes slideLeft {
+  from {margin-left: 40px;}
+  to {margin-left: 0;}
+}
+.slideLeft {animation: slideLeft .5s ease-out;}
+
+@keyframes slideUp {
+  from {margin-top: 40px;}
+  to {margin-top: 0;}
+}
+.slideUp {animation: slideUp .5s ease-out;}
+
+@keyframes slideDown {
+  from {margin-top: -30px;}
+  to {margin-top: 0;}
+}
+.slideDown {animation: slideDown .5s ease-out;}
